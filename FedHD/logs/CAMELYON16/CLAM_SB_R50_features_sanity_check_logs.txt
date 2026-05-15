@@ -1,0 +1,50 @@
+__main__: 2026-05-02 20:26:15,198 | main.py:113 | Results: /scratch/iq24/cc0395/FedHD/exp/CAMELYON16/CLAM_SB_R50_features_sanity_check
+__main__: 2026-05-02 20:26:15,199 | main.py:137 | ===== Run 0 starts =====
+__main__: 2026-05-02 20:26:15,610 | fed_cam_dataset.py:123 | Warning: /g/data/iq24/CAMELYON16_patches/train/normal/R50_features/pt_files/normal_027.pt does not exist
+__main__: 2026-05-02 20:26:15,682 | fed_cam_dataset.py:123 | Warning: /g/data/iq24/CAMELYON16_patches/test/tumor/R50_features/pt_files/test_001.pt does not exist
+__main__: 2026-05-02 20:26:15,763 | fed_cam_dataset.py:123 | Warning: /g/data/iq24/CAMELYON16_patches/test/normal/R50_features/pt_files/test_114.pt does not exist
+__main__: 2026-05-02 20:26:16,045 | fed_cam_dataset.py:133 | Warning you are operating on a reduced dataset in  DEBUG mode with in total 396/399 features.
+__main__: 2026-05-02 20:26:16,231 | fed_cam_dataset.py:123 | Warning: /g/data/iq24/CAMELYON16_patches/train/normal/UNI_features/pt_files/normal_027.pt does not exist
+__main__: 2026-05-02 20:26:16,300 | fed_cam_dataset.py:123 | Warning: /g/data/iq24/CAMELYON16_patches/test/tumor/UNI_features/pt_files/test_001.pt does not exist
+__main__: 2026-05-02 20:26:16,378 | fed_cam_dataset.py:123 | Warning: /g/data/iq24/CAMELYON16_patches/test/normal/UNI_features/pt_files/test_114.pt does not exist
+__main__: 2026-05-02 20:26:16,651 | fed_cam_dataset.py:133 | Warning you are operating on a reduced dataset in  DEBUG mode with in total 396/399 features.
+__main__: 2026-05-02 20:26:16,763 | fed_cam_dataset.py:123 | Warning: /g/data/iq24/CAMELYON16_patches/train/normal/R50_features/pt_files/normal_027.pt does not exist
+__main__: 2026-05-02 20:26:16,806 | fed_cam_dataset.py:123 | Warning: /g/data/iq24/CAMELYON16_patches/test/tumor/R50_features/pt_files/test_001.pt does not exist
+__main__: 2026-05-02 20:26:16,854 | fed_cam_dataset.py:123 | Warning: /g/data/iq24/CAMELYON16_patches/test/normal/R50_features/pt_files/test_114.pt does not exist
+__main__: 2026-05-02 20:26:17,002 | fed_cam_dataset.py:133 | Warning you are operating on a reduced dataset in  DEBUG mode with in total 396/399 features.
+__main__: 2026-05-02 20:26:17,059 | fed_cam_dataset.py:123 | Warning: /g/data/iq24/CAMELYON16_patches/train/normal/UNI_features/pt_files/normal_027.pt does not exist
+__main__: 2026-05-02 20:26:17,101 | fed_cam_dataset.py:123 | Warning: /g/data/iq24/CAMELYON16_patches/test/tumor/UNI_features/pt_files/test_001.pt does not exist
+__main__: 2026-05-02 20:26:17,149 | fed_cam_dataset.py:123 | Warning: /g/data/iq24/CAMELYON16_patches/test/normal/UNI_features/pt_files/test_114.pt does not exist
+__main__: 2026-05-02 20:26:17,329 | fed_cam_dataset.py:133 | Warning you are operating on a reduced dataset in  DEBUG mode with in total 396/399 features.
+__main__: 2026-05-02 20:27:33,286 | SynGenerator.py:376 | =========================Pretraining Clients=========================
+__main__: 2026-05-02 20:28:10,456 | SynGenerator.py:312 | [MIL Training]Agent: 0, Iter: 0, Loss: 0.6169035761129289, Test Acc: 0.6756756756756757, Test F1: 0.0, Test AUC: 0.4358333333333333
+__main__: 2026-05-02 20:28:16,151 | SynGenerator.py:395 | [Pretrain Done]Client 0 Test Loss: 0.953932510034458, Test Acc: 0.6756756756756757
+__main__: 2026-05-02 20:29:30,726 | SynGenerator.py:312 | [MIL Training]Agent: 1, Iter: 0, Loss: 1.2903568495497588, Test Acc: 0.4339622641509434, Test F1: 0.6052631578947368, Test AUC: 0.4536231884057972
+__main__: 2026-05-02 20:29:47,558 | SynGenerator.py:395 | [Pretrain Done]Client 1 Test Loss: 0.7686627630917531, Test Acc: 0.4339622641509434
+__main__: 2026-05-02 20:29:47,590 | SynGenerator.py:405 | =========================Training synthetic data=========================
+__main__: 2026-05-02 20:30:50,348 | SynGenerator.py:483 | Caching 168 images for client 0...
+__main__: 2026-05-02 20:31:03,313 | SynGenerator.py:491 | Caching complete for client 0
+__main__: 2026-05-02 20:33:16,268 | SynGenerator.py:317 | [MIL Training]Agent: 0, Iter: 0, Loss: 1.3998577844883715
+__main__: 2026-05-02 20:33:23,639 | SynGenerator.py:609 | ====> client =  0, iter =  0, loss = 0.1215, acc = 0.3243
+__main__: 2026-05-02 20:34:51,523 | SynGenerator.py:483 | Caching 101 images for client 1...
+__main__: 2026-05-02 20:35:09,394 | SynGenerator.py:491 | Caching complete for client 1
+__main__: 2026-05-02 20:37:13,995 | SynGenerator.py:317 | [MIL Training]Agent: 1, Iter: 0, Loss: 1.4045819830232833
+__main__: 2026-05-02 20:37:32,942 | SynGenerator.py:609 | ====> client =  1, iter =  0, loss = 0.9507, acc = 0.5094
+__main__: 2026-05-02 20:37:34,830 | SynGenerator.py:629 | =========================Synthetic data training done=========================
+__main__: 2026-05-02 20:37:34,834 | SynGenerator.py:630 | Allocated: 1707.30 MB
+__main__: 2026-05-02 20:37:34,834 | SynGenerator.py:631 | Reserved: 1980.00 MB
+__main__: 2026-05-02 20:37:35,578 | SynGenerator.py:639 | Load synthetic images with informative acc: 0.32432432432432434 and loss: 0.12152817357508909
+__main__: 2026-05-02 20:37:36,203 | SynGenerator.py:639 | Load synthetic images with informative acc: 0.5094339622641509 and loss: 0.950685509122335
+__main__: 2026-05-02 20:37:36,391 | SynGenerator.py:648 | =========================Synthetic data to feature done=========================
+__main__: 2026-05-02 20:37:36,392 | SynGenerator.py:649 | Allocated: 1707.30 MB
+__main__: 2026-05-02 20:37:36,393 | SynGenerator.py:650 | Reserved: 1980.00 MB
+__main__: 2026-05-02 20:37:36,393 | SynGenerator.py:652 | =========================Mixup vitual data=========================
+__main__: 2026-05-02 20:37:36,986 | SynGenerator.py:665 | =========================Mixup vitual data done=========================
+__main__: 2026-05-02 20:37:36,991 | SynGenerator.py:666 | Allocated: 1707.30 MB
+__main__: 2026-05-02 20:37:36,991 | SynGenerator.py:667 | Reserved: 1980.00 MB
+__main__: 2026-05-02 20:37:59,298 | SynGenerator.py:735 | Client 0 Test Loss: 0.46128287146220337, Test Acc: 0.6756756756756757, Best Test Acc: 0.6756756756756757, Best Test F1: 0.0, Best Test AUC: 0.6
+__main__: 2026-05-02 20:38:37,249 | SynGenerator.py:735 | Client 0 Test Loss: 0.4492247108672116, Test Acc: 0.6756756756756757, Best Test Acc: 0.6756756756756757, Best Test F1: 0.0, Best Test AUC: 0.6
+__main__: 2026-05-02 20:38:37,250 | SynGenerator.py:737 | ============ Client 0 Best Test Acc: 0.6756756756756757 =================
+__main__: 2026-05-02 20:39:50,339 | SynGenerator.py:735 | Client 1 Test Loss: 0.8253686908843383, Test Acc: 0.5660377358490566, Best Test Acc: 0.5660377358490566, Best Test F1: 0.0, Best Test AUC: 0.3884057971014493
+__main__: 2026-05-02 20:41:39,325 | SynGenerator.py:735 | Client 1 Test Loss: 1.1330193358491052, Test Acc: 0.5660377358490566, Best Test Acc: 0.5660377358490566, Best Test F1: 0.0, Best Test AUC: 0.3884057971014493
+__main__: 2026-05-02 20:41:39,327 | SynGenerator.py:737 | ============ Client 1 Best Test Acc: 0.5660377358490566 =================
