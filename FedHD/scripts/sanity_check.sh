@@ -4,13 +4,13 @@
 #PBS -l ngpus=1
 #PBS -q gpuvolta
 #PBS -l mem=64GB
-#PBS -l storage=gdata/iq24+scratch/iq24
+#PBS -l storage=
 #PBS -l walltime=00:20:00
 #PBS -l jobfs=10GB
 #PBS -N fedhd_sanity
 
-CODE_ROOT=/scratch/iq24/cc0395/FedHD
-FT_ROOT=/g/data/iq24/CAMELYON16_patches
+CODE_ROOT=
+FT_ROOT=
 cd $CODE_ROOT
 source /g/data/iq24/mmcv_env/bin/activate
 
