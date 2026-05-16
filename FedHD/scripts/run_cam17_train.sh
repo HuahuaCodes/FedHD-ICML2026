@@ -4,12 +4,12 @@
 #PBS -l ngpus=1
 #PBS -q gpuvolta
 #PBS -l mem=64GB
-#PBS -l storage=gdata/iq24+scratch/iq24
+#PBS -l storage=
 #PBS -l walltime=12:00:00
 #PBS -l jobfs=20GB
 #PBS -N fedhd_cam17_train
 
-CODE_ROOT=/scratch/iq24/cc0395/FedHD
+CODE_ROOT=
 cd $CODE_ROOT
 source /g/data/iq24/mmcv_env/bin/activate
 
@@ -32,7 +32,7 @@ python main.py \
   --nps 1000 \
   --syn_size 1024 \
   --local_epochs 50 \
-  --data_root_dir /g/data/iq24/CAMELYON17_patches/centers \
+  --data_root_dir  \
   --results_dir $CODE_ROOT/exp \
   --use_latent_prior \
   --instance_learn \
