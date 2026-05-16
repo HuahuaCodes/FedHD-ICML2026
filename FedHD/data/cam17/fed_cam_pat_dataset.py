@@ -212,13 +212,13 @@ if __name__=='__main__':
     test_dict = {'center_0': 0, 'center_1': 0, 'center_2': 0, 'center_3': 0, 'center_4': 0}
     print('====================')
     for center in train_dict:
-        center_train = FedCamelyon17Pat(center=center, train=True, data_path='/g/data/iq24/CAMELYON17_patches/centers/')
+        center_train = FedCamelyon17Pat(center=center, train=True, data_path='')
         train_dict[center] = len(center_train)
-        center_test = FedCamelyon17Pat(center=center, train=False, data_path='/g/data/iq24/CAMELYON17_patches/centers/')
+        center_test = FedCamelyon17Pat(center=center, train=False, data_path='')
         test_dict[center] = len(center_test)
     print(train_dict)
     print(test_dict)
 
-    c0_train_dataset = FedCamelyon17Pat(center='center_0', train=True, data_path='/g/data/iq24/CAMELYON17_patches/centers/')
+    c0_train_dataset = FedCamelyon17Pat(center='center_0', train=True, data_path='')
     X, y = iter(DataLoader(c0_train_dataset, batch_size=1, shuffle=True, num_workers=0)).next()
     print(X.size(), y.size())
