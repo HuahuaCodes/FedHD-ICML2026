@@ -16,9 +16,9 @@ source /g/data/iq24/mmcv_env/bin/activate
 
 | Dataset | Path | Extractors |
 |---|---|---|
-| CAMELYON16 | `/g/data/iq24/CAMELYON16_patches` | R50, UNI, PhikonV2, GPFM |
-| CAMELYON17 | `/g/data/iq24/CAMELYON17_patches/centers` | R50, PhikonV2, GPFM (**no UNI**) |
-| TCGA-IDH | `/g/data/iq24/IDH` | R50, UNI, PhikonV2, GPFM |
+| CAMELYON16 | `` | R50, UNI, PhikonV2, GPFM |
+| CAMELYON17 | `` | R50, PhikonV2, GPFM (**no UNI**) |
+| TCGA-IDH | `` | R50, UNI, PhikonV2, GPFM |
 
 Each dataset follows the structure:
 ```
