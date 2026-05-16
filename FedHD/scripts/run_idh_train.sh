@@ -9,7 +9,7 @@
 #PBS -l jobfs=20GB
 #PBS -N fedhd_idh_train
 
-CODE_ROOT=/scratch/iq24/cc0395/FedHD
+CODE_ROOT=
 cd $CODE_ROOT
 source /g/data/iq24/mmcv_env/bin/activate
 
@@ -32,7 +32,7 @@ python main.py \
   --nps 1000 \
   --syn_size 1024 \
   --local_epochs 50 \
-  --data_root_dir /g/data/iq24/IDH \
+  --data_root_dir  \
   --results_dir $CODE_ROOT/exp \
   --use_latent_prior \
   --instance_learn \
