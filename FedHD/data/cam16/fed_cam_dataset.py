@@ -25,8 +25,8 @@ class Camelyon16Raw(Dataset):
             center=0,
     ):
         self.data_path = data_path
-        self.labels = pd.read_csv('/scratch/iq24/cc0395/FedHD/data/cam16/labels.csv')
-        self.metadata = pd.read_csv('/scratch/iq24/cc0395/FedHD/data/cam16/metadata.csv')
+        self.labels = pd.read_csv('/FedHD/data/cam16/labels.csv')
+        self.metadata = pd.read_csv('/FedHD/data/cam16/metadata.csv')
         self.X_dtype = X_dtype
         self.y_dtype = y_dtype
         self.debug = debug
@@ -274,14 +274,14 @@ if __name__=='__main__':
     test_dict = {'UMCU': 0, 'RUMC': 0}
     print('====================')
     # To load the first center as a pytorch dataset
-    center0 = FedCamelyon16(center=0, train=True, data_path='/g/data/iq24/CAMELYON16_patches')
+    center0 = FedCamelyon16(center=0, train=True, data_path='')
     # To load the second center as a pytorch dataset
-    center1 = FedCamelyon16(center=1, train=True, data_path='/g/data/iq24/CAMELYON16_patches')
+    center1 = FedCamelyon16(center=1, train=True, data_path='')
     train_dict['UMCU'] = len(center0)
     train_dict['RUMC'] = len(center1)
 
-    center0 = FedCamelyon16(center=0, train=False, data_path='/g/data/iq24/CAMELYON16_patches')
-    center1 = FedCamelyon16(center=1, train=False, data_path='/g/data/iq24/CAMELYON16_patches')
+    center0 = FedCamelyon16(center=0, train=False, data_path='')
+    center1 = FedCamelyon16(center=1, train=False, data_path='')
     test_dict['UMCU'] = len(center0)
     test_dict['RUMC'] = len(center1)
     print(train_dict)
